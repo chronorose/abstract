@@ -1,0 +1,39 @@
+\usepackage[regular]{newcomputermodern}
+
+\usepackage[russian,english]{babel}
+
+\usepackage{geometry}
+\geometry{a4paper, total={170mm,257mm}, margin=2cm, left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+\linespread{1.1}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{0pt}
+
+\usepackage{tocbibind}
+
+\usepackage[format=plain]{caption}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    captionpos=b,
+    language=C,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red}
+}
+
+\usepackage{float}
+\newfloat{listing}{htbp}{lop}
+\floatname{listing}{Листинг}
