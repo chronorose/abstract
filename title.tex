@@ -1,0 +1,117 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[]{inputenc}
+\usepackage[english,russian]{babel}
+
+\linespread{1.1}
+
+\usepackage{amssymb,amsfonts,amsmath,cite,enumerate,float,indentfirst}
+\usepackage{booktabs,mathtools,xhfill}
+
+\usepackage[]{graphicx} 
+\usepackage{float}
+\usepackage{wrapfig}
+\graphicspath{{images/}}
+
+\usepackage{lipsum}
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usepackage{xcolor}
+\usepackage[]{geometry}
+\geometry{a4paper, margin=2cm, total={170mm,257mm},left=2cm,right=2cm, top=2cm,bottom=2cm}
+
+\date{}
+\pagecolor{white} 
+
+\newcommand{\fromto}[2]{#1 \xrfill[.0ex]{.10pt} #2}
+\newcommand{\fromtotriple}[3]{#1 \xrfill[.0ex]{.10pt} #2 \xrfill[.0ex]{.10pt} #3}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    captionpos=b,
+    language=C,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red}
+}
+
+\tcbset{
+    colback=white,
+    colframe=black!40,
+    arc=3mm,
+    boxrule=1pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    fonttitle=\bfseries
+}
+
+\begin{document}
+
+\begin{titlepage}
+\newpage
+
+\begin{center}
+МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
+ «НОВОСИБИРСКИЙ НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ» \\
+(НОВОСИБИРСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ, НГУ)
+\end{center}
+
+\vspace{8em}
+
+\begin{center}
+\Large Механико-математический факультет \\ 
+\Large Математика и компьютерные науки \\
+\Large Кафедра Программирования
+\end{center}
+
+\vspace{2em}
+
+\begin{center}
+\textsc{\textbf{Реферат \linebreak Rendezvous channels}}
+\end{center}
+
+\vspace{6em}
+
+\newbox{\lbox}
+\savebox{\lbox}{\hbox{Жакулин Владимир Владимирович}}
+\newlength{\maxl}
+\setlength{\maxl}{\wd\lbox}
+\hfill\parbox{11cm}{
+\hspace*{5cm}\hspace*{-5cm}Студент:\hfill\hbox to\maxl{Жакулин Владимир Владимирович\hfill}\\
+\hspace*{5cm}\hspace*{-5cm}Группа:\hfill\hbox to\maxl{23126}\\
+\\
+\hspace*{5cm}\hspace*{-5cm}Научный руководитель:\hfill\hbox to\maxl{ Трепаков Иван Сергеевич}\\
+\hspace*{5cm}\hspace*{-5cm}Индустриальный доцент, cтарший преподаватель \\ кафедры программирования ММФ\\
+
+\fromto{Реферат принят:}{Трепаков И.С.}
+\newline
+\fromtotriple{«}{»}{2026 г.}
+}
+
+
+\vspace{\fill}
+
+\begin{center}
+Новосибирск \\2026
+\end{center}
+
+\end{titlepage}
+
+\end{document}
